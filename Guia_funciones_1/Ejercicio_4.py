@@ -23,4 +23,4 @@ print(numero)
 if validar_numero_en_rango:
     print(f"el número {numero} se encuentra dentro del rango ingresado")
 else:
-        print(f"el número {numero} no se encuentra dentro del rango ingresado")
+    print(f"el número {numero} no se encuentra dentro del rango ingresado")
