@@ -34,3 +34,12 @@ def validar_numero_en_rango(numero:float, inicio_rango:float, fin_rango:float)->
     else:
         resultado = False
     return resultado
+
+def devuelve_menor_de_los_numeros(lista_numeros:list)->int:
+    menor_numero = lista_numeros[0]
+    for i in range(len(lista_numeros)):
+        if lista_numeros[i] < menor_numero:
+            menor_numero = lista_numeros[i]
+
+    return menor_numero
+
