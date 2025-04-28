@@ -35,7 +35,7 @@ def validar_numero_en_rango(numero:float, inicio_rango:float, fin_rango:float)->
         resultado = False
     return resultado
 
-def devuelve_menor_de_los_numeros(lista_numeros:list)->int:
+def devuelve_menor_de_los_numeros_lista(lista_numeros:list)->int:
     menor_numero = lista_numeros[0]
     for i in range(len(lista_numeros)):
         if lista_numeros[i] < menor_numero:
@@ -43,3 +43,18 @@ def devuelve_menor_de_los_numeros(lista_numeros:list)->int:
 
     return menor_numero
 
+def promedia_lista_numeros(lista_numeros:list)->float:
+    suma_numeros = 0
+    for i in range(len(lista_numeros)):
+        suma_numeros += lista_numeros[i]
+    promedio = suma_numeros/len(lista_numeros)
+
+    return promedio
+
+def devuelve_mayor_de_los_numeros_lista(lista_numeros:list)->int:
+    mayor_numero = lista_numeros[0]
+    for i in range(len(lista_numeros)):
+        if lista_numeros[i] > mayor_numero:
+            mayor_numero = lista_numeros[i]
+
+    return mayor_numero
