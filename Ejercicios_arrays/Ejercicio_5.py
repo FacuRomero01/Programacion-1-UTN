@@ -1,5 +1,5 @@
-# Importamos la función que nos devuelve el menor de los números
-from Funciones import devuelve_menor_de_los_numeros
+# Importo la función que nos devuelve el menor de los números
+from Funciones import devuelve_menor_de_los_numeros_lista
 
 def chequea_y_retorna_menores_edad(nombres: list, edades: list) -> list:
     """
@@ -8,8 +8,8 @@ def chequea_y_retorna_menores_edad(nombres: list, edades: list) -> list:
 
     """
 
-    # Se obtiene la edad mínima de la lista de edades utilizando la función importada 'devuelve_menor_de_los_numeros'
-    edad_minima = devuelve_menor_de_los_numeros(edades)
+    # Guardo en la variable 'edad_minima' la edad mínima de la lista de edades utilizando la función importada 'devuelve_menor_de_los_numeros'
+    edad_minima = devuelve_menor_de_los_numeros_lista(edades)
 
     # Lista vacía para almacenar los nombres de las personas con la edad mínima
     lista_nombres_menores_edad = []
@@ -32,7 +32,7 @@ edades = [23, 45, 34, 23, 46, 23, 45, 67, 37, 68, 25, 55, 45, 27, 43]
 nombres_menores = chequea_y_retorna_menores_edad(nombres, edades)
 
 # Obtenemos la edad mínima de la lista de edades
-edad_menores = devuelve_menor_de_los_numeros(edades)
+edad_menores = devuelve_menor_de_los_numeros_lista(edades)
 
 # Inicializamos una cadena vacía para almacenar los nombres de las personas con la edad mínima
 nombres_menores_str = ""
