@@ -2,9 +2,9 @@ from Funciones import *
 
 def suma_o_resta_de_2_numeros_segun_usuario(numero_1:int,numero_2:int,operacion:str)->int:
     if operacion == "s":
-        resultado = numero1 + numero2
+        resultado = numero_1 + numero_2
     else:
-        resultado = numero1 - numero2
+        resultado = numero_1 - numero_2
     return resultado
 
 

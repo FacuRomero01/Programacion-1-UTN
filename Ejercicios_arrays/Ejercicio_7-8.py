@@ -105,8 +105,8 @@ def menu_startup():
         print("4- Listar los datos del/los usuario/s más joven/es")
         print("5- Obtener un promedio de edad de los usuarios")
         print("6- De los usuarios de Brasil, listar los datos del usuario de mayor edad")
-        print("7-Listar los datos de los usuarios de México y Brasil cuyo código postal sea mayor a 8000")
-        print("8-Listar nombre, mail y teléfono de los usuarios italianos mayores a 40 años.")
+        print("7- Listar los datos de los usuarios de México y Brasil cuyo código postal sea mayor a 8000")
+        print("8- Listar nombre, mail y teléfono de los usuarios italianos mayores a 40 años.")
         print("9- Cerrar programa")
         opcion = (input("\nIngrese una opción (1-9): "))
 
@@ -125,7 +125,7 @@ def menu_startup():
         elif opcion == "7":
             lista_datos_brasil_mexico_con_postal_mayor_8000()
         elif opcion == "8":
-            lista_datos_italianos_mayores_40()
+            print(lista_datos_italianos_mayores_40())
         elif opcion == "9":
             print("\nSe cerró el menú\nFIN")
             break
