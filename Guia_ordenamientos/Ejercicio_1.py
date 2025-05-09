@@ -17,6 +17,6 @@ edades = [23,45,34,23,46,23,45,67,37,68,25,55,45,27,43]
 
 
 ordena_nombre_asc(nombres,edades)
-print("{:<15} {:<20}".format("Nombres", "Edades"))
+print("{:<15} {:<20}".format("\nNombres", "Edades\n"))
 for i in range(len(nombres)):
     print("{:<15} {:<20}".format(nombres[i], edades[i]))

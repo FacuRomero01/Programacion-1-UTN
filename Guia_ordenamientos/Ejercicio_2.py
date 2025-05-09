@@ -19,10 +19,11 @@ def ordena_nombre_asc_y_puntos_des(nombres:list,puntos:list)->list:
                     puntos[i] = puntos[j]
                     puntos[j] = temp_puntos
 
-    return nombres, puntos
-
 nombres = ["Matematica","Investigacion Operativa","Ingles","Literatura","Ciencias Sociales","Computacion","Ingles","Algebra","Contabilidad","Artistica", "Algoritmos","Base de Datos", "Ergonomia", "Naturaleza"]
 puntos = [100,98,56,25,87,38,64,42,28,91,66,35,49,57]
 
-print(ordena_nombre_asc_y_puntos_des(nombres,puntos))
+ordena_nombre_asc_y_puntos_des(nombres,puntos)
+print("{:<30} {:<20}".format("\nNombres", "Edades\n"))
+for i in range(len(nombres)):
+    print("{:<30} {:<20}".format(nombres[i], puntos[i]))
 
