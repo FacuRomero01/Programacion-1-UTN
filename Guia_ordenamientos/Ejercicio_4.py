@@ -44,7 +44,7 @@ def menu_startup():
         elif opcion == "8":
             lista_datos_italianos_mayores_40(nombres,telefonos,mails,address,postalZip,region,country,edades)
         elif opcion == "9":
-            lista_nombre_mexicanos_ascendente(nombres,country)
+            lista_nombre_mexicanos_ascendente(nombres,telefonos,mails,address,postalZip,region,country,edades)
         elif opcion == "10":
             lista_datos_mas_jovenes_asc(nombres,telefonos,mails,address,postalZip,region,country,edades)
         elif opcion == "11":

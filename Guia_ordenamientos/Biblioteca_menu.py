@@ -62,7 +62,6 @@ def lista_datos_italianos_mayores_40(nombres:list,telefonos:list,mails:list,addr
             if edades[i] > 40:
                 print("{:<20} {:<20} {:<30} {:<40} {:<17} {:<12} {:<10} {:<17}".format(nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]))
 
-
 def lista_nombre_mexicanos_ascendente(nombres:list,country:list):
     lista_nombres_mexicanos = []
     for i in range(len(nombres)):
@@ -73,74 +72,6 @@ def lista_nombre_mexicanos_ascendente(nombres:list,country:list):
     print("{:<20}".format("Nombre\n"))
     for i in range(len(lista_nombres_mexicanos)):
         print("{:<20}".format(lista_nombres_mexicanos[i]))
-
-def ordena_datos_edad_asc():
-    for i in range(len(nombres)-1):
-        for j in range(i+1, len(nombres)):
-            if edades[i] > edades[j]:
-
-                aux = edades[i]
-                edades[i] = edades[j]
-                edades[j] = aux
-
-                aux = nombres[i]
-                nombres[i] = nombres[j]
-                nombres[j] = aux
-
-                aux = telefonos[i]
-                telefonos[i] = telefonos[j]
-                telefonos[j] = aux
-
-                aux = mails[i]
-                mails[i] = mails[j]
-                mails[j] = aux
-
-                aux = address[i]
-                address[i] = address[j]
-                address[j] = aux
-
-                aux = postalZip[i]
-                postalZip[i] = postalZip[j]
-                postalZip[j] = aux
-
-                aux = region[i]
-                region[i] = region[j]
-                region[j] = aux
-
-                aux = country[i]
-                country[i] = country[j]
-                country[j] = aux
-
-            elif edades[i] == edades[j]:
-                if nombres[i] > nombres[j]:
-                    
-                    aux = nombres[i]
-                    nombres[i] = nombres[j]
-                    nombres[j] = aux
-
-                    aux = telefonos[i]
-                    telefonos[i] = telefonos[j]
-                    telefonos[j] = aux
-
-                    aux = mails[i]
-                    mails[i] = mails[j]
-                    mails[j] = aux
-
-                    aux = address[i]
-                    address[i] = address[j]
-                    address[j] = aux
-
-                    aux = postalZip[i]
-                    postalZip[i] = postalZip[j]
-                    postalZip[j] = aux
-
-                    aux = region[i]
-                    region[i] = region[j]
-                    region[j] = aux
-
-                    aux = country[i]
-                    country[i] = country[j]
-                    country[j] = aux
     
 def lista_datos_mas_jovenes_asc(nombres:list,telefonos:list,mails:list,address:list,postalZip:list,region:list,country:list,edades:list):
     menor_edad = devuelve_menor_de_los_numeros_lista(edades)
@@ -149,74 +80,6 @@ def lista_datos_mas_jovenes_asc(nombres:list,telefonos:list,mails:list,address:l
     for i in range(len(nombres)):
         if menor_edad == edades[i]:
             print("{:<20} {:<20} {:<42} {:<40} {:<17} {:<32} {:<24} {:<20}".format(nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]))
-
-def ordena_datos_edad_desc():
-    for i in range(len(nombres)-1):
-        for j in range(i+1, len(nombres)):
-            if edades[i] < edades[j]:
-
-                aux = edades[i]
-                edades[i] = edades[j]
-                edades[j] = aux
-
-                aux = nombres[i]
-                nombres[i] = nombres[j]
-                nombres[j] = aux
-
-                aux = telefonos[i]
-                telefonos[i] = telefonos[j]
-                telefonos[j] = aux
-
-                aux = mails[i]
-                mails[i] = mails[j]
-                mails[j] = aux
-
-                aux = address[i]
-                address[i] = address[j]
-                address[j] = aux
-
-                aux = postalZip[i]
-                postalZip[i] = postalZip[j]
-                postalZip[j] = aux
-
-                aux = region[i]
-                region[i] = region[j]
-                region[j] = aux
-
-                aux = country[i]
-                country[i] = country[j]
-                country[j] = aux
-
-            elif edades[i] == edades[j]:
-                if nombres[i] > nombres[j]:
-                    
-                    aux = nombres[i]
-                    nombres[i] = nombres[j]
-                    nombres[j] = aux
-
-                    aux = telefonos[i]
-                    telefonos[i] = telefonos[j]
-                    telefonos[j] = aux
-
-                    aux = mails[i]
-                    mails[i] = mails[j]
-                    mails[j] = aux
-
-                    aux = address[i]
-                    address[i] = address[j]
-                    address[j] = aux
-
-                    aux = postalZip[i]
-                    postalZip[i] = postalZip[j]
-                    postalZip[j] = aux
-
-                    aux = region[i]
-                    region[i] = region[j]
-                    region[j] = aux
-
-                    aux = country[i]
-                    country[i] = country[j]
-                    country[j] = aux
 
 def ordena_datos_brasil_mexico_con_postal_mayor_8000_desc(nombres:list,telefonos:list,mails:list,address:list,postalZip:list,region:list,country:list,edades:list):
     for i in range(len(nombres)-1):
