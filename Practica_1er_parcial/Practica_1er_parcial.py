@@ -18,12 +18,13 @@ def verificar_tesoro(mapa: list, x: int, y: int) -> int:
 
 seguir = "s"
 while seguir == "s":
-    coor_x = int(input("Ingrese la coordenada x (entre 1 y 5 inclusive): ")) -1
-    while coor_x < 1 and coor_x > 5:
-        coor_x = int(input("ERROR! Ingrese una coordenada x válida (entre 1 y 5 inclusive): ")) -1
-    coor_y = int(input("Ingrese la coordenada y (entre 1 y 5 inclusive): ")) -1
-    while coor_y < 1 and coor_y > 5:
-        coor_y = int(input("ERROR! Ingrese una coordenada y válida (entre 1 y 5 inclusive): ")) -1
+    coor_x = int(input("Ingrese la coordenada x (entre 0 y 4 inclusive): "))
+    while coor_x < 0 or coor_x > 4:
+        coor_x = int(input("ERROR! Ingrese una coordenada x válida (entre 0 y 4 inclusive): "))
+    coor_y = int(input("Ingrese la coordenada y (entre 0 y 4 inclusive): ")) 
+    while coor_y < 0 or coor_y > 4:
+        coor_y = int(input("ERROR! Ingrese una coordenada y válida (entre 1 y 5 inclusive): "))
+    
     res = verificar_tesoro(mapa,coor_x,coor_y)
     
     if res == 0:
