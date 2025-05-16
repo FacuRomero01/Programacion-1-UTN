@@ -13,8 +13,14 @@ def verificar_tesoro(mapa: list, x: int, y: int) -> int:
         for i in range(len(mapa)):
             for j in range(len(mapa[i])):
                 if mapa[i][j] == 1:
-                    res = abs(x-i)+abs(y-j)
+                    res = valor_absoluto(x-i)+valor_absoluto(y-j)
     return res
+
+def valor_absoluto(numero):
+    if numero < 0:
+        return -numero
+    else:
+        return numero
 
 seguir = "s"
 while seguir == "s":
