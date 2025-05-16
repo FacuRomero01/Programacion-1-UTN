@@ -39,6 +39,6 @@ while seguir == "s":
     else:
         print(f"Fallaste. El tesoro está a {res} casilleros de distancia.")
         seguir = input("Desea seguir buscando el tesoro? (s/n): ").lower()
-        while seguir != "s".lower() or seguir != "n".lower():
+        while seguir != "s".lower() and seguir != "n".lower():
             seguir = input("ERROR! Ingrese una opcion válida. Desea seguir buscando el tesoro? (s/n): ").lower()
 
